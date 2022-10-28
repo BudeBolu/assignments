@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --lightgray: hsl(0, 0%, 95%);
+}
+
+*, *::before, *::after {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: flex;
+    place-content: center;
+    background-color: var(--lightgray);
+    height: 100vh;
+    src: url('https: //fonts.google.com/specimen/Lexend+Deca');
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    src: url('https: //fonts.google.com/specimen/Big+Shoulders+Display');
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--lightgray);
+}
+
+p {
+    font-size: 15px;
+    margin: 25px 0 60px 0;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    width: 840px;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+    align-items: flex-start;
+}
+
+.firstbox {
+    background-color: var(--orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.secondbox {
+    background-color: var(--cyan);
+}
+
+.thirdbox {
+    background-color: var(--dark-cyan);
+    border-radius: 0 10px 10px 0;
+} 
+
+button {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 16;
+    border: solid 2px var(--lightgray);
+    transition: all ease 0.3s;
+}
+
+.firstbox button {
+    color:hsl(31, 77%, 52%);
+}
+
+.secondbox button {
+    color:hsl(184, 100%, 22%);
+}
+
+.thirdbox button {
+    color:hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background: transparent;
+    color: var(--lightgray);
+}
+
+.rectangle {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        margin-bottom: 20px;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: 16% 0;
+        padding: 8%;
+    }
+
+    .boxes {
+        padding: 38px 44px;
+    }
+
+    .firstbox {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .thirdbox {
+        border-radius: 0 0 10px 10px;
+    }
+
+}
